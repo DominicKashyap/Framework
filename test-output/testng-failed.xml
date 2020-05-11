@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Test Execution]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="E2E Test Suite On Web - Chrome(failed)">
+    <parameter name="platformType" value="web"/>
+    <parameter name="platformName" value="chrome"/>
+    <classes>
+      <class name="tests.HomePageTest">
+        <methods>
+          <include name="startAppiumServer"/>
+          <include name="stopAppiumServer"/>
+          <include name="teardownDriver"/>
+          <include name="testSignUpOption"/>
+          <include name="testSignInOption"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- tests.HomePageTest -->
+    </classes>
+  </test> <!-- E2E Test Suite On Web - Chrome(failed) -->
+</suite> <!-- Failed suite [Test Execution] -->
