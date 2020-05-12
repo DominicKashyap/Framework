@@ -2,17 +2,13 @@ package org.Framework.imageCompare;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
-import org.apache.commons.io.FileUtils;
 import org.Framework.config.DeviceConfig;
 import org.Framework.utils.FileUtility;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.WebDriver;
 import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
-import ru.yandex.qatools.ashot.shooting.CuttingDecorator;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
-import ru.yandex.qatools.ashot.shooting.cutter.CutStrategy;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
