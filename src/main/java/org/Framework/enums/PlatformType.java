@@ -1,4 +1,4 @@
-package org.oneframework.enums;
+package org.Framework.enums;
 
 public enum PlatformType {
     WEB, MOBILE;

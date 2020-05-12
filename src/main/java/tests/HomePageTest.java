@@ -1,8 +1,8 @@
 package tests;
 
-import org.oneframework.allureReport.TestListener;
-import org.oneframework.imageCompare.ImageComparator;
-import org.oneframework.pageObjects.HomePage;
+import org.Framework.allureReport.TestListener;
+import org.Framework.imageCompare.ImageComparator;
+import org.Framework.pageObjects.HomePage;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;

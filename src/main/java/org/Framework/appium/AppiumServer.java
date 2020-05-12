@@ -1,4 +1,4 @@
-package org.oneframework.appium;
+package org.Framework.appium;
 
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
@@ -7,7 +7,7 @@ import io.appium.java_client.service.local.flags.GeneralServerFlag;
 import java.io.File;
 import java.io.IOException;
 
-import static org.oneframework.logger.LoggingManager.logMessage;
+import static org.Framework.logger.LoggingManager.logMessage;
 
 public class AppiumServer {
 

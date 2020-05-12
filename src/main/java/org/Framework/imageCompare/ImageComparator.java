@@ -1,10 +1,10 @@
-package org.oneframework.imageCompare;
+package org.Framework.imageCompare;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
 import org.apache.commons.io.FileUtils;
-import org.oneframework.config.DeviceConfig;
-import org.oneframework.utils.FileUtility;
+import org.Framework.config.DeviceConfig;
+import org.Framework.utils.FileUtility;
 import org.openqa.selenium.WebDriver;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
@@ -19,7 +19,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-import static org.oneframework.logger.LoggingManager.logMessage;
+import static org.Framework.logger.LoggingManager.logMessage;
 
 public class ImageComparator extends DeviceConfig {
     WebDriver driver;
@@ -50,7 +50,7 @@ public class ImageComparator extends DeviceConfig {
 
         BufferedImage image = new AShot().takeScreenshot(driver).getImage();
         if (driver instanceof IOSDriver || driver instanceof AndroidDriver) {
-            DeviceViewportModel viewport = DeviceConfig.readDeviceViewportConfig().getDeviceViewport(executionPlatform);
+            org.Framework.imageCompare.DeviceViewportModel viewport = DeviceConfig.readDeviceViewportConfig().getDeviceViewport(executionPlatform);
             image = image.getSubimage(viewport.getX(), viewport.getY(), viewport.getWidth(), viewport.getHeight());
         }
         ImageIO.write(image, "png", imageFile);

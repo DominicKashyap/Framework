@@ -30,7 +30,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TestRunner (1)">
+    <configuration name="TestRunner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.Framework.runner.TestRunner" />
+      <module name="Automation.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.Framework.runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.oneframework.runner.TestRunner" />
       <module name="Automation.main" />
@@ -46,6 +59,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestRunner (1)" />
         <item itemvalue="Application.TestRunner" />
       </list>
     </recent_temporary>
@@ -68,22 +82,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1589183966563" />
-    <state width="1493" height="95" key="GridCell.Tab.0.bottom" timestamp="1589185175637">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1589217947351">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="95" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589185175637" />
-    <state width="1493" height="95" key="GridCell.Tab.0.center" timestamp="1589185175637">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589217947351" />
+    <state width="1493" height="94" key="GridCell.Tab.0.bottom" timestamp="1589304589475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="95" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589185175637" />
-    <state width="1493" height="95" key="GridCell.Tab.0.left" timestamp="1589185175637">
+    <state width="1493" height="94" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589304589475" />
+    <state width="1493" height="94" key="GridCell.Tab.0.center" timestamp="1589304589475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="95" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589185175637" />
-    <state width="1493" height="95" key="GridCell.Tab.0.right" timestamp="1589185175637">
+    <state width="1493" height="94" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589304589475" />
+    <state width="1493" height="94" key="GridCell.Tab.0.left" timestamp="1589304589474">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="95" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589185175637" />
+    <state width="1493" height="94" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589304589474" />
+    <state width="1493" height="94" key="GridCell.Tab.0.right" timestamp="1589304589475">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="94" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589304589475" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1589183963619">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,15 +1,15 @@
-package org.oneframework.runner;
+package org.Framework.runner;
 
-import org.oneframework.imageCompare.ImageComparator;
-import org.oneframework.utils.FileUtility;
+import org.Framework.imageCompare.ImageComparator;
+import org.Framework.utils.FileUtility;
 import org.testng.TestNG;
 import org.testng.collections.Lists;
 
 import java.io.IOException;
 import java.util.List;
 
-import static org.oneframework.imageCompare.ImageComparator.MODE;
-import static org.oneframework.logger.LoggingManager.logMessage;
+import static org.Framework.imageCompare.ImageComparator.MODE;
+import static org.Framework.logger.LoggingManager.logMessage;
 
 public class TestRunner {
     public static void main(String[] args) throws IOException {

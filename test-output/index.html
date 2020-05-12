@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Test_Execution" class="navigator-link">
-              <span class="suite-name border-skipped">Test Execution</span>
+              <span class="suite-name border-passed">Test Execution</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Test_Execution" class="navigator-link ">
-                    <span>C:\Users\Gulab Chand\Documents\GitHub\OneFramework\testng.xml</span>
+                    <span>C:\Users\Gulab Chand\Documents\Framework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,26 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  2 skipped,  </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Test_Execution" class="hide-methods skipped suite-Test_Execution"> (hide)</a> <!-- hide-methods skipped suite-Test_Execution -->
-                      <a href="#" panel-name="suite-Test_Execution" class="show-methods skipped suite-Test_Execution"> (show)</a> <!-- show-methods skipped suite-Test_Execution -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Test_Execution" class="hide-methods passed suite-Test_Execution"> (hide)</a> <!-- hide-methods passed suite-Test_Execution -->
+                      <a href="#" panel-name="suite-Test_Execution" class="show-methods passed suite-Test_Execution"> (show)</a> <!-- show-methods passed suite-Test_Execution -->
                     </span>
-                    <div class="method-list-content skipped suite-Test_Execution">
+                    <div class="method-list-content passed suite-Test_Execution">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test_Execution" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testSignInOption">testSignInOption</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test_Execution" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testSignUpOption">testSignUpOption</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Test_Execution -->
+                    </div> <!-- method-list-content passed suite-Test_Execution -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,9 +122,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Execution" class="panel Test_Execution">
-          <div class="suite-Test_Execution-class-skipped">
+          <div class="suite-Test_Execution-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,34 +133,6 @@
                   <a name="testSignInOption">
                   </a> <!-- testSignInOption -->
                   <span class="method-name">testSignInOption</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP-4HAH12EE&apos;, ip: &apos;192.168.0.191&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at org.oneframework.drivers.WebDriverBuilder.setupDriver(WebDriverBuilder.java:19)
-	at tests.BaseTest.setupWebDriver(BaseTest.java:63)
-	at tests.BaseTest.setupDriver(BaseTest.java:46)
-	at org.oneframework.runner.TestRunner.main(TestRunner.java:33)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7616/status] to be available after 20003 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-	... 37 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 38 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (testing the signin page visually)                  </em>
                 </div> <!-- method-content -->
@@ -170,44 +142,16 @@ Caused by: java.util.concurrent.TimeoutException
                   <a name="testSignUpOption">
                   </a> <!-- testSignUpOption -->
                   <span class="method-name">testSignUpOption</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;LAPTOP-4HAH12EE&apos;, ip: &apos;192.168.0.191&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:192)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at org.oneframework.drivers.WebDriverBuilder.setupDriver(WebDriverBuilder.java:19)
-	at tests.BaseTest.setupWebDriver(BaseTest.java:63)
-	at tests.BaseTest.setupDriver(BaseTest.java:46)
-	at org.oneframework.runner.TestRunner.main(TestRunner.java:33)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7616/status] to be available after 20003 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:187)
-	... 37 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:148)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 38 more
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (testing the signup page visually)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Execution-class-skipped -->
+          </div> <!-- suite-Test_Execution-class-passed -->
         </div> <!-- panel Test_Execution -->
         <div panel-name="test-xml-Test_Execution" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Gulab Chand\Documents\GitHub\OneFramework\testng.xml</span>
+            <span class="header-content">C:\Users\Gulab Chand\Documents\Framework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -262,16 +206,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSignInOption')
 data.setCell(0, 2, 'tests.HomePageTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 7088);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testSignUpOption')
 data.setCell(1, 2, 'tests.HomePageTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 2479);
 window.suiteTableData['Test_Execution']= { tableData: data, tableDiv: 'times-div-Test_Execution'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Test_Execution">
               </div> <!-- times-div-Test_Execution -->
             </div> <!-- times-div -->
@@ -298,27 +242,37 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testSignInOption</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSignUpOption</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-test before">
                 <span class="method-name">startAppiumServer(web, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setupDriver(web, chrome, null)</span>
-                <span class="method-start">79 ms</span>
+                <span class="method-start">74 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignInOption</span>
+                <span class="method-start">27014 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownDriver</span>
+                <span class="method-start">34120 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupDriver(web, chrome, null)</span>
+                <span class="method-start">35782 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSignUpOption</span>
+                <span class="method-start">50142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownDriver</span>
+                <span class="method-start">52627 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">stopAppiumServer(web, chrome)</span>
-                <span class="method-start">28188 ms</span>
+                <span class="method-start">53985 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

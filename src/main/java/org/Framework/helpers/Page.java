@@ -1,4 +1,4 @@
-package org.oneframework.helpers;
+package org.Framework.helpers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -1,4 +1,4 @@
-package org.oneframework.allureReport;
+package org.Framework.allureReport;
 
 import io.qameta.allure.Attachment;
 import org.openqa.selenium.OutputType;

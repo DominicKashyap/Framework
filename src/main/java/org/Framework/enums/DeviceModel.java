@@ -1,4 +1,4 @@
-package org.oneframework.enums;
+package org.Framework.enums;
 
 public enum DeviceModel {
     IPHONE6, IPHONE6S, IPADAIR, IPADAIR2, PIXEL, NEXUS;

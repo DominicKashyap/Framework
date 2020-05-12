@@ -1,4 +1,4 @@
-package org.oneframework.config;
+package org.Framework.config;
 
 import java.util.Arrays;
 

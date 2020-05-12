@@ -1,10 +1,10 @@
-package org.oneframework.drivers;
+package org.Framework.drivers;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.oneframework.config.AndroidDeviceModel;
-import org.oneframework.config.DeviceConfig;
+import org.Framework.config.AndroidDeviceModel;
+import org.Framework.config.DeviceConfig;
 import org.oneframework.utils.FileUtility;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-import static org.oneframework.logger.LoggingManager.logMessage;
+import static org.Framework.logger.LoggingManager.logMessage;
 
 public class AndroidDriverBuilder extends DeviceConfig {
 

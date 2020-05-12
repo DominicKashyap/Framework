@@ -9,30 +9,4 @@
             <class name="tests.HomePageTest"/>
         </classes>
     </test>
-
-<!--    <test name="E2E Test Suite On Web - Firefox">-->
-<!--        <parameter name="platformType" value="web"/>-->
-<!--        <parameter name="platformName" value="firefox"/>-->
-<!--        <classes>-->
-<!--            <class name="tests.HomePageTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-    <!--<test name="E2E Test Suite On Android - Pixel">-->
-        <!--<parameter name="platformType" value="mobile"/>-->
-        <!--<parameter name="platformName" value="android"/>-->
-        <!--<parameter name="model" value="pixel"/>-->
-        <!--<classes>-->
-            <!--<class name="tests.HomePageTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
-
-    <!--<test name="E2E Test Suite On iOS - iPhone6S">-->
-        <!--<parameter name="platformType" value="mobile"/>-->
-        <!--<parameter name="platformName" value="ios"/>-->
-        <!--<parameter name="model" value="iphone6s"/>-->
-        <!--<classes>-->
-            <!--<class name="tests.HomePageTest"/>-->
-        <!--</classes>-->
-    <!--</test>-->
 </suite>

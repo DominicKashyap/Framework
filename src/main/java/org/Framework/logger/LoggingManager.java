@@ -1,4 +1,4 @@
-package org.oneframework.logger;
+package org.Framework.logger;
 
 import java.util.logging.Logger;
 

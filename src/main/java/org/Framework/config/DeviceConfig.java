@@ -1,9 +1,11 @@
-package org.oneframework.config;
+package org.Framework.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.Framework.config.AndroidDeviceModel;
+import org.Framework.config.IOSDeviceModel;
 import org.apache.commons.io.FileUtils;
-import org.oneframework.imageCompare.DeviceViewportModel;
-import org.oneframework.utils.FileUtility;
+import org.Framework.imageCompare.DeviceViewportModel;
+import org.Framework.utils.FileUtility;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,15 +1,15 @@
-package org.oneframework.pageObjects;
+package org.Framework.pageObjects;
 
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import io.appium.java_client.pagefactory.iOSFindBy;
-import org.oneframework.helpers.Page;
+import org.Framework.helpers.Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static org.oneframework.logger.LoggingManager.logMessage;
+import static org.Framework.logger.LoggingManager.logMessage;
 
 public class HomePage extends Page {
 
@@ -33,17 +33,17 @@ public class HomePage extends Page {
         Thread.sleep(1000);
     }
 
-    public SignInPage chooseSignInOption() throws Exception {
+    public org.oneframework.pageObjects.SignInPage chooseSignInOption() throws Exception {
         clickElement(eleSignInBtn);
-        new SignInPage(driver).clickOnSignInTitle();
+        new org.oneframework.pageObjects.SignInPage(driver).clickOnSignInTitle();
         logMessage("Chosen signIn option");
-        return new SignInPage(driver);
+        return new org.oneframework.pageObjects.SignInPage(driver);
     }
 
-    public SignUpPage chooseSignUpOption() throws Exception {
+    public org.oneframework.pageObjects.SignUpPage chooseSignUpOption() throws Exception {
         clickElement(eleSignUpBtn);
         logMessage("Chosen signUp option");
-        return new SignUpPage(driver);
+        return new org.oneframework.pageObjects.SignUpPage(driver);
     }
 
 }

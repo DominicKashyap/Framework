@@ -1,4 +1,4 @@
-package org.oneframework.imageCompare;
+package org.Framework.imageCompare;
 
 import java.util.Arrays;
 

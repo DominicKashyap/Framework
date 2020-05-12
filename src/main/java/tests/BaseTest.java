@@ -1,17 +1,17 @@
 package tests;
 
-import org.oneframework.drivers.AndroidDriverBuilder;
-import org.oneframework.appium.AppiumServer;
-import org.oneframework.drivers.IOSDriverBuilder;
-import org.oneframework.drivers.WebDriverBuilder;
-import org.oneframework.enums.PlatformName;
-import org.oneframework.enums.PlatformType;
+import org.Framework.drivers.AndroidDriverBuilder;
+import org.Framework.appium.AppiumServer;
+import org.Framework.drivers.IOSDriverBuilder;
+import org.Framework.drivers.WebDriverBuilder;
+import org.Framework.enums.PlatformName;
+import org.Framework.enums.PlatformType;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import java.io.IOException;
 
-import static org.oneframework.logger.LoggingManager.logMessage;
+import static org.Framework.logger.LoggingManager.logMessage;
 
 public class BaseTest {
     public WebDriver driver;
