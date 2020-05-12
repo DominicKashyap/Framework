@@ -5,7 +5,7 @@ import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.Framework.config.AndroidDeviceModel;
 import org.Framework.config.DeviceConfig;
-import org.oneframework.utils.FileUtility;
+import org.Framework.utils.FileUtility;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;

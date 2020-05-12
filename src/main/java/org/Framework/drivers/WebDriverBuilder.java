@@ -2,7 +2,7 @@ package org.Framework.drivers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.Framework.config.DeviceConfig;
-import org.oneframework.enums.PlatformName;
+import org.Framework.enums.PlatformName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

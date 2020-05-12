@@ -4,7 +4,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.Framework.config.DeviceConfig;
 import org.Framework.config.IOSDeviceModel;
-import org.oneframework.utils.FileUtility;
+import org.Framework.utils.FileUtility;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;

@@ -9,11 +9,49 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Test Execution</th></tr>
-<tr><td><a href="#t0">E2E Test Suite On Web - Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">54,008</td><td></td><td></td></tr>
+<tr><td><a href="#t0">E2E Test Suite On Web - Chrome</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num">42,844</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Execution</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E2E Test Suite On Web - Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.HomePageTest</td><td><a href="#m0">testSignInOption</a></td><td rowspan="1">1589186944221</td><td rowspan="1">7088</td></tr><tr class="passedeven"><td><a href="#m1">testSignUpOption</a></td><td rowspan="1">1589186967349</td><td rowspan="1">2479</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Test Execution</th></tr></tbody><tbody id="t0"><tr><th colspan="4">E2E Test Suite On Web - Chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">tests.HomePageTest</td><td><a href="#m0">setupDriver</a></td><td rowspan="1">1589304859566</td><td rowspan="1">5854</td></tr><tr><th colspan="4">E2E Test Suite On Web - Chrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">tests.HomePageTest</td><td><a href="#m1">teardownDriver</a></td><td rowspan="1">1589304865453</td><td rowspan="1">0</td></tr><tr><th colspan="4">E2E Test Suite On Web - Chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.HomePageTest</td><td><a href="#m2">testSignUpOption</a></td><td rowspan="1">1589304865439</td><td rowspan="1">0</td></tr><tr><th colspan="4">E2E Test Suite On Web - Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.HomePageTest</td><td><a href="#m3">testSignInOption</a></td><td rowspan="1">1589304849420</td><td rowspan="1">9044</td></tr></tbody>
 </table>
-<h2>E2E Test Suite On Web - Chrome</h2><h3 id="m0">tests.HomePageTest#testSignInOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.HomePageTest#testSignUpOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>E2E Test Suite On Web - Chrome</h2><h3 id="m0">tests.HomePageTest#setupDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>web</td><td>chrome</td><td>null</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-4HAH12EE&apos;, ip: &apos;192.168.0.191&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)
+	at tests.BaseTest.setupWebDriver(BaseTest.java:68)
+	at tests.BaseTest.setupDriver(BaseTest.java:46)
+	at org.Framework.runner.TestRunner.main(TestRunner.java:33)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.HomePageTest#teardownDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.HomePageTest#testSignUpOption</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-4HAH12EE&apos;, ip: &apos;192.168.0.191&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)
+	at tests.BaseTest.setupWebDriver(BaseTest.java:68)
+	at tests.BaseTest.setupDriver(BaseTest.java:46)
+	at org.Framework.runner.TestRunner.main(TestRunner.java:33)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.HomePageTest#testSignInOption</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

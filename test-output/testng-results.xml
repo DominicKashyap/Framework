@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-11T08:48:37Z" name="Test Execution" finished-at="2020-05-11T08:49:31Z" duration-ms="54008">
+  <suite started-at="2020-05-12T17:33:42Z" name="Test Execution" finished-at="2020-05-12T17:34:25Z" duration-ms="42844">
     <groups>
     </groups>
-    <test started-at="2020-05-11T08:48:37Z" name="E2E Test Suite On Web - Chrome" finished-at="2020-05-11T08:49:31Z" duration-ms="54008">
+    <test started-at="2020-05-12T17:33:42Z" name="E2E Test Suite On Web - Chrome" finished-at="2020-05-12T17:34:25Z" duration-ms="42844">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="startAppiumServer(java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:48:37Z" name="startAppiumServer" finished-at="2020-05-11T08:48:37Z" duration-ms="49" status="PASS">
+        <test-method is-config="true" signature="startAppiumServer(java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:33:42Z" name="startAppiumServer" finished-at="2020-05-12T17:33:42Z" duration-ms="30" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServer -->
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:48:37Z" name="setupDriver" finished-at="2020-05-11T08:49:03Z" duration-ms="26590" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:33:42Z" name="setupDriver" finished-at="2020-05-12T17:34:08Z" duration-ms="25973" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,15 +42,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="testSignInOption()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:49:04Z" name="testSignInOption" description="testing the signin page visually" finished-at="2020-05-11T08:49:11Z" duration-ms="7088" status="PASS">
+        <test-method signature="testSignInOption()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:34:09Z" name="testSignInOption" description="testing the signin page visually" finished-at="2020-05-12T17:34:18Z" duration-ms="9044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignInOption -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:49:11Z" name="teardownDriver" finished-at="2020-05-11T08:49:12Z" duration-ms="1567" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:34:18Z" name="teardownDriver" finished-at="2020-05-12T17:34:19Z" duration-ms="1001" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:49:12Z" name="setupDriver" finished-at="2020-05-11T08:49:27Z" duration-ms="14357" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:34:19Z" name="setupDriver" finished-at="2020-05-12T17:34:25Z" duration-ms="5854" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -66,18 +66,142 @@
               <value is-null="true"/>
             </param>
           </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-4HAH12EE', ip: '192.168.0.191', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-4HAH12EE', ip: '192.168.0.191', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)
+at tests.BaseTest.setupWebDriver(BaseTest.java:68)
+at tests.BaseTest.setupDriver(BaseTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.Framework.runner.TestRunner.main(TestRunner.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="testSignUpOption()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:49:27Z" name="testSignUpOption" description="testing the signup page visually" finished-at="2020-05-11T08:49:29Z" duration-ms="2479" status="PASS">
+        <test-method signature="testSignUpOption()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:34:25Z" name="testSignUpOption" description="testing the signup page visually" finished-at="2020-05-12T17:34:25Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-4HAH12EE', ip: '192.168.0.191', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-4HAH12EE', ip: '192.168.0.191', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)
+at tests.BaseTest.setupWebDriver(BaseTest.java:68)
+at tests.BaseTest.setupDriver(BaseTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.Framework.runner.TestRunner.main(TestRunner.java:33)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignUpOption -->
-        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:49:29Z" name="teardownDriver" finished-at="2020-05-11T08:49:31Z" duration-ms="1354" status="PASS">
+        <test-method is-config="true" signature="teardownDriver()[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:34:25Z" name="teardownDriver" finished-at="2020-05-12T17:34:25Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardownDriver -->
-        <test-method is-config="true" signature="stopAppiumServer(java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-11T08:49:31Z" name="stopAppiumServer" finished-at="2020-05-11T08:49:31Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="stopAppiumServer(java.lang.String, java.lang.String)[pri:0, instance:tests.HomePageTest@5fe94a96]" started-at="2020-05-12T17:34:25Z" name="stopAppiumServer" finished-at="2020-05-12T17:34:25Z" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>

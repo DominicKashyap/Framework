@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Test_Execution" class="navigator-link">
-              <span class="suite-name border-passed">Test Execution</span>
+              <span class="suite-name border-skipped">Test Execution</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Test_Execution" class="hide-methods skipped suite-Test_Execution"> (hide)</a> <!-- hide-methods skipped suite-Test_Execution -->
+                      <a href="#" panel-name="suite-Test_Execution" class="show-methods skipped suite-Test_Execution"> (show)</a> <!-- show-methods skipped suite-Test_Execution -->
+                    </span>
+                    <div class="method-list-content skipped suite-Test_Execution">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Test_Execution" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testSignUpOption">testSignUpOption</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Test_Execution -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +117,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Test_Execution" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testSignInOption">testSignInOption</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Test_Execution" title="tests.HomePageTest" class="method navigator-link" hash-for-method="testSignUpOption">testSignUpOption</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Test_Execution -->
@@ -122,6 +131,43 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Test_Execution" class="panel Test_Execution">
+          <div class="suite-Test_Execution-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSignUpOption">
+                  </a> <!-- testSignUpOption -->
+                  <span class="method-name">testSignUpOption</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.138)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-4HAH12EE&apos;, ip: &apos;192.168.0.191&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\GULABC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51340}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5b84348b3c9d69f34470a79bf223260e
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:271)
+	at tests.BaseTest.setupWebDriver(BaseTest.java:68)
+	at tests.BaseTest.setupDriver(BaseTest.java:46)
+	at org.Framework.runner.TestRunner.main(TestRunner.java:33)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(testing the signup page visually)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Execution-class-skipped -->
           <div class="suite-Test_Execution-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -135,15 +181,6 @@
                   <span class="method-name">testSignInOption</span>
                   <em>
 (testing the signin page visually)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSignUpOption">
-                  </a> <!-- testSignUpOption -->
-                  <span class="method-name">testSignUpOption</span>
-                  <em>
-(testing the signup page visually)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -206,11 +243,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testSignInOption')
 data.setCell(0, 2, 'tests.HomePageTest')
-data.setCell(0, 3, 7088);
+data.setCell(0, 3, 9044);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testSignUpOption')
 data.setCell(1, 2, 'tests.HomePageTest')
-data.setCell(1, 3, 2479);
+data.setCell(1, 3, 0);
 window.suiteTableData['Test_Execution']= { tableData: data, tableDiv: 'times-div-Test_Execution'}
 return data;
 }
@@ -242,37 +279,35 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testSignUpOption</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test before">
                 <span class="method-name">startAppiumServer(web, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">setupDriver(web, chrome, null)</span>
-                <span class="method-start">74 ms</span>
+                <span class="method-start">49 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testSignInOption</span>
-                <span class="method-start">27014 ms</span>
+                <span class="method-start">26797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardownDriver</span>
-                <span class="method-start">34120 ms</span>
+                <span class="method-start">35933 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setupDriver(web, chrome, null)</span>
-                <span class="method-start">35782 ms</span>
+                <span class="method-start">36943 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSignUpOption</span>
-                <span class="method-start">50142 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardownDriver</span>
-                <span class="method-start">52627 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">stopAppiumServer(web, chrome)</span>
-                <span class="method-start">53985 ms</span>
+                <span class="method-start">42833 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

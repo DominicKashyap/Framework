@@ -33,17 +33,17 @@ public class HomePage extends Page {
         Thread.sleep(1000);
     }
 
-    public org.oneframework.pageObjects.SignInPage chooseSignInOption() throws Exception {
+    public org.Framework.pageObjects.SignInPage chooseSignInOption() throws Exception {
         clickElement(eleSignInBtn);
-        new org.oneframework.pageObjects.SignInPage(driver).clickOnSignInTitle();
+        new org.Framework.pageObjects.SignInPage(driver).clickOnSignInTitle();
         logMessage("Chosen signIn option");
-        return new org.oneframework.pageObjects.SignInPage(driver);
+        return new org.Framework.pageObjects.SignInPage(driver);
     }
 
-    public org.oneframework.pageObjects.SignUpPage chooseSignUpOption() throws Exception {
+    public org.Framework.pageObjects.SignUpPage chooseSignUpOption() throws Exception {
         clickElement(eleSignUpBtn);
         logMessage("Chosen signUp option");
-        return new org.oneframework.pageObjects.SignUpPage(driver);
+        return new org.Framework.pageObjects.SignUpPage(driver);
     }
 
 }
